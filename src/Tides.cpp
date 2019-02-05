@@ -236,14 +236,7 @@ struct TidesWidget : ModuleWidget {
 };
 
 TidesWidget::TidesWidget(Tides *module) : ModuleWidget(module) {
-	box.size = Vec(15 * 14, 380);
-
-	{
-		tidesPanel = new LightPanel();
-		tidesPanel->backgroundImage = Image::load(assetPlugin(plugin, "res/Cycles.png"));
-		tidesPanel->box.size = box.size;
-		addChild(tidesPanel);
-	}
+	setPanel(SVG::load(assetPlugin(plugin, "res/Cycles.svg")));
 
 	addChild(Widget::create<ScrewSilver>(Vec(15, 0)));
 	addChild(Widget::create<ScrewSilver>(Vec(180, 0)));
