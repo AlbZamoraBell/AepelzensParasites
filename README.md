@@ -1,3 +1,5 @@
+Fork to correct panel: from an ugly and pixelated PNG file to a nice crispy and dark SVG.
+
 # Aepelzens Parasites
 
 This is a mod of some Audible Instruments Modules for VCV-Rack with the [parasites
